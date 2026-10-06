@@ -4,7 +4,7 @@ int main()
     int a;
     printf("請輸入身高(cm):");
     scanf("%d",&a);
-    if (a>=120);
+    if (a>=120)
     {
         printf("可以搭乘雲霄飛車");
     }
