@@ -1,15 +1,14 @@
 #include <stdio.h>
-#define BUDGET 20000
-int expense;
+int gold=1000;
+void buyItem()
+{
+    extern int gold;
+    gold=gold-200;
+    printf("購買完成，剩餘金幣：%d",gold);
+
+}
 int main()
 {
-    extern int expense;
-    int total;
-    printf("請輸入目前的旅行花費：");
-    scanf("%d",&expense);
-    total=BUDGET-expense;
-    printf("旅行總預算：%d\n",BUDGET);
-    printf("目前旅行花費：%d\n",expense);
-    printf("剩餘預算：%d\n",total);
+    buyItem();
     return 0;
 }
